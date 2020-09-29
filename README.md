@@ -27,6 +27,17 @@ A repository of important troubleshooting searches for Splunk
 | timechart max(current_size) by name`
 
 
+# Troubleshooting Forwarding 
 
+**Which forwardersare sending data to Splunk and how much?**
+`index=_internal sourcetype=splunkd host=<indexer> metrics tcpin_connections
+|  timechart span=5m max(tcp_KBps) by sourceIp`
+
+**Where is the forwarder trying to send data to?**
+`index=_internal host=< uf > sourcetype=splunkd StatusMgr destHost`
+
+**What output queues are set up?**
+`index=_internal host=<uf >  source=* metrics.log group=queue tcpout
+| stats count by name`
 
 
