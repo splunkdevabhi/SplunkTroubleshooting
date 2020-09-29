@@ -62,5 +62,5 @@ A repository of important troubleshooting searches for Splunk
 <br />`index=_internal sourcetype=splunkd_access method=GET jobs | stats sum(bytes) by uri`
 
 # Troubleshooting No Results Problems
-<br /> **The following checks can help troubleshoot no results **
-
+<br /> **The following checks can help troubleshoot no results**
+![Image 5](https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/No%20Results.png?raw=true)
