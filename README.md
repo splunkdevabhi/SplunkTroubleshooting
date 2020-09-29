@@ -43,4 +43,7 @@ A repository of important troubleshooting searches for Splunk
 # Distributed Search Job Overview
 ![Image 3](https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/DSJ%20Overview.png?raw=true)
 
+# Search Problem Categories 
+![Image 4](https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/Search%20Problems.png?raw=true)
+
 
