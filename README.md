@@ -3,6 +3,8 @@ A repository of important troubleshooting searches for Splunk
 
 # Splunk Problem Classification
 
-Screen Shot 2020-09-29 at 10.59.44 AM
+https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/Screen%20Shot%202020-09-29%20at%2010.59.44%20AM.png
+
+
 
 
