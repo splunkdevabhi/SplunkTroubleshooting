@@ -46,4 +46,18 @@ A repository of important troubleshooting searches for Splunk
 # Search Problem Categories 
 ![Image 4](https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/Search%20Problems.png?raw=true)
 
+# Troubleshooting User Searches 
+
+**Lengthy Search?**
+<br />`index="_audit" action="search" (id=* OR search_id=*) | eval user=if(user=="n/a",null(),user) | stats max(total_run_time) as  total_run_time first(user) as user by search_id
+| stats count perc95(total_run_time) median(total_run_time) by user`
+
+**How much time are the indexers spending in response to queries from SH?**
+<br />`index=_internal source=* remote_searches.log server=<sh> | stats max(elapsedTime) by search_id host`
+
+**Identify all splunkd responses taking more than 100ms** 
+<br />`index=_internal sourcetype=splunkd_access host=<sh> user=<user> | rex "(?<spent>\d+)ms" | search spent > 100`
+
+**What is the size of the artifacts?**
+<br />`index=_internal sourcetype=splunkd_access method=GET jobs | stats sum(bytes) by uri`
 
