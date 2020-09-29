@@ -40,4 +40,7 @@ A repository of important troubleshooting searches for Splunk
 <br />`index=_internal host=<uf >  source=* metrics.log group=queue tcpout
 | stats count by name`
 
+# Distributed Search Job Overview
+![Image 3](https://github.com/splunkdevabhi/SplunkTroubleshooting/blob/master/DSJ%20Overview.png?raw=true)
+
 
